@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--允许全屏-->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <!--禁止电话号码和邮箱识别-->
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <!--添加一个ios用的icon-->
+    <!--改成你想要的缩放比例-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <!--<script src="https://as.alipayobjects.com/g/zm/zm-sdk/0.0.57/tools/zepto.js"></script>-->
+    <!-- <script src="https://as.alipayobjects.com/g/zm/zm-sdk/0.0.57/tools/pubTools.js"></script> -->
+    <!-- <script src="https://a.alipayobjects.com/publichome-static/antBridge/antBridge.min.js"></script> -->
+    <!--项目CSS-->
+    <!--<link rel="stylesheet" href="https://as.alipayobjects.com/g/zm/zm-sdk/0.0.57/tools/amui.css" />-->
+    <!--<link rel="stylesheet" href="https://as.alipayobjects.com/g/zm/zm-sdk/0.0.57/authorize_h5.css" />-->
+
+    <title>芝麻信用授权</title>
+    <!--项目CSS-->
+    <style type="text/css">
+        html{font-family:"PingFangSC-Light",Helvetica,STHeiTi,sans-serif;background:#fff;height:100%}
+        body{padding:0;margin:0;background:#fff}
+        a{color:#0ae;text-decoration:none}
+        @font-face{font-family:authorizePc;src:url(https://at.alicdn.com/t/font_1436263220_948506.eot);src:url(https://at.alicdn.com/t/font_1436263220_948506.eot?#iefix) format('embedded-opentype'),url(https://at.alicdn.com/t/font_1436263220_948506.woff) format('woff'),url(https://at.alicdn.com/t/font_1436263220_948506.ttf) format('truetype'),url(https://at.alicdn.com/t/font_1436263220_948506.svg#iconfont) format('svg')}
+        .authorize-title-mobile,.authorize-title-pc{width:100%;height:70px;background:#fff;border-bottom:2px solid #00c68d}
+        .authorize-title-mobile{height:85px;padding-top:13px}
+        .authorize-logo-mobile,.authorize-logo-pc{width:990px;height:70px;margin:0 auto;background:url(https://t.alipayobjects.com/images/rmsweb/T1ndlgXethXXXXXXXX.jpg) no-repeat}
+        .authorize-logo-mobile{width:200px}
+        .fail-content{width:950px;padding:20px 40px;margin:0 auto;background:#fff;margin-top:40px;border:1px solid #e3e3e3;border-radius:5px}
+        .fail-img{display:block;margin:25px auto;height:61px;width:61px}
+        .fail-content-mobile .fail-img{display:block;margin:0 auto;height:61px;width:61px;margin-top:15%}
+        .fail-content-mobile{margin-top:20px}
+        .error-info{font-size:18px;text-align:center;color:#333}
+        .error-icon{font-family:authorizePc;color:#ff1200;font-size:22px}
+        .junm-title{color:#555555;font-size:16px;font-weight:bold;text-align:center;margin:15px}
+        .junm-tips{color:#CCCCCC;font-size:12px;text-align:center;margin:15px}
+        .jump-info{color:#555555;font-size:14px;text-align:center;margin:15px}
+        .fail-content-mobile .jump-info{line-height:20px;width:100%;margin:15px auto;margin-top:5%}
+        .agree-authorize{margin:20px 10px;}
+        .jump-back-btn{width:90%;height:45px;border:0;background:#01c488;line-height:30px;color:#fff;font-size:20px;margin:0 auto;border-radius:5px;display:block}
+    </style>
+</head>
+
+<body ontouchstart="" id="authorize-fail" data-code="SYSTEM_FAILURE" data-value="" data-token="" data-channelType="" sessionId="GZ00QT7g3F6wHbohAzuaXGBsVFC5W1zmcustprodGZ00">
+<!--    <div class="authorize-pc">-->
+<!--    </div>-->
+<!--    <div class="authorize-mobile">-->
+<!--        <div class="authorize-title-mobile">-->
+<!--            <div class="authorizimages/e-logo-mobile"></div>-->
+<!--        </div>-->
+<div class="fail-content-mobile">
+    <img class="fail-img" src="Images/ic_warning@3x.png">
+    <div class="junm-title">授权失败</div>
+    <div class="jump-info">
+        请登录电脑版中华英才网<br />
+        www.chinahr.com<br />
+        在帐号管理页面修改绑定手机号后重新发布。<br />
+        您填写的职位信息将无法保存<br />
+    </div>
+</div>
+<div class="agree-authorize">
+    <button class="jump-back-btn" onclick='goback()'>确定<span class="j-time"></span></button>
+</div>
+<div class="junm-tips">芝麻信用 ∙ 版权所有</div>
+<!--    </div>-->
+</body>
+
+</html>
